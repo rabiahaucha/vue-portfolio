@@ -50,5 +50,7 @@
 </script>
 
 <style scoped>
-
+  .nav{
+    z-index: -1;
+  }
 </style>
