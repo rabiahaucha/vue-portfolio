@@ -51,7 +51,8 @@
             </div>
           </button>
         </form>
-        <div class="direct-contact-container">
+
+         <div class="direct-contact-container">
           <ul class="contact-list">
             <li class="list-item">
               <i class="fa fa-map-marker fa-2x"
@@ -80,7 +81,6 @@
               >
             </li>
           </ul>
-          <!-- <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div> -->
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@
       </div>
       <div class="image">
         <img
-          src="https://i.postimg.cc/c6GSmLPP/something.png" alt=""/>
+          src="https://i.postimg.cc/c6GSmLPP/something.png" alt="" loading="lazy">
       </div>
     </div>
   </div>
