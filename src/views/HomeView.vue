@@ -22,7 +22,7 @@
 <script></script>
 <style scoped>
 .name{
-  color: #bb7873;
+  color: #a37477;
 }
 .rabia{
   font-family: 'Neuemontreal',sans-serif;
@@ -72,7 +72,7 @@ p {
   font-size: 2em;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(90deg, #000, #ebc0bd, #000);
+  background: linear-gradient(90deg, #000, #a37474, #000);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 7s linear infinite;
