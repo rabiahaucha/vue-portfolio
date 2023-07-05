@@ -1,13 +1,12 @@
 <template>
     <div>
-        <canvas id="pie-chart"> </canvas>
-   
-    <div class="my-5 container">
-        <div class="row">
+    <div class="my-5 container" >
+        <div class="row" style="margin-top: 6rem">
             <h1>MY <span style="color:#a37474;">SKILLS</span></h1>
             <div class="col-12 col-md-4" v-for="data in Skills" :key="data.id">
-                <img :src="data.image" alt="" style="width:9rem;height:9rem;">
-                <p>{{ data.description }}</p>
+              <img :src="data.image" alt="" style="width:9rem;height:9rem;">
+              <p style="margin-top:2rem;">{{data.level}}</p>
+              <p>{{ data.description }}</p>
              </div>   
         </div>
     </div>
@@ -37,7 +36,7 @@
 
 body {
   background-color: #f9fafb;
-  font-family: "Open Sans", sans-serif;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,18 +44,20 @@ body {
   margin: 0;
 }
 .container {
+  
   background-color: #fff;
+  font: 700 12px "Lato", sans-serif;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   
 }
-@media all and (max-width: 780px) {
+@media all and (max-width: 900px) {
   .container {
     width: auto;
   }
 };
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 900px) {
   .container {
     padding: 0px 20px;
   }

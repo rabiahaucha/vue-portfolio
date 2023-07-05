@@ -55,10 +55,12 @@
          <div class="direct-contact-container">
           <ul class="contact-list">
             <li class="list-item">
+              <i class="bi bi-geo-alt-fill" style="color: black"><span class="contact-text place"
+                >Cape Town,Western Cape</span
+                ></i>
+
               <i class="fa fa-map-marker fa-2x"
-                ><span class="contact-text place"
-                  >Cape Town,Western Cape</span
-                ></i
+              ></i
               >
             </li>
             <li class="list-item">
