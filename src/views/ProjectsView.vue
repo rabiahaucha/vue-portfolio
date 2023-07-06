@@ -3,7 +3,7 @@
     <h1>MY<span style="color:#a37474;"> PROJECTS</span></h1>
 
 </span>
-  <div class="container scroll-1 pt-5 " >
+  <div class="container scroll-1 pt-5 m-auto" >
     <div class="card" v-for="data in Projects" :key="data.id">
             <div class="card__image" >
             <img :src="data.image" alt="" style="width:38rem;" loading="lazy">
@@ -13,14 +13,33 @@
               <p class="card__describe">
                 {{data.text}}
               </p>
-              <div class="d-flex ">
+              <div class="d-flex1 ">
 
                 <a :href="data.github" class="btn w-25" target="_blank" id="button">Github</a>
-                <a :href="data.Netlify" class="btn w-25" target="_blank" id="button">Netlify</a>
+                <a :href="data.netlify" class="btn w-25" target="_blank" id="button">Netlify</a>
               </div>
           </div>
 </div>
+
+<!-- Mobile Cards -->
+</div>
+<div class="container1">
+  <div class="row gap-3">
+    <div class="col-12" v-for="data in Projects" :key="data.id">
+      <div class="card mobile-cards m-auto" style="width: 18rem;">
+        <img class="card-img-top" :src="data.image" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ data.title }}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex">
+            <a :href="data.github" class="btn w-25" target="_blank" id="button"><i class="bi bi-github"></i></a>
+            <a :href="data.netlify" class="btn w-25" target="_blank" id="button"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
@@ -59,7 +78,7 @@
   h3{
     font: 700 12px "Lato", sans-serif;
   }
-  .d-flex{
+  .d-flex1{
     gap:15rem;
   }
   .btn{
@@ -125,5 +144,19 @@
   .card .card__content .card__describe {
     color: #fff;
     font-size: 16px;
+  }
+
+  .mobile-cards{
+    display: none;
+  }
+
+  @media (width <= 37rem) {
+    .scroll-1{
+      display: none;
+    }
+
+    .mobile-cards{
+      display: block;
+    }
   }
 </style>

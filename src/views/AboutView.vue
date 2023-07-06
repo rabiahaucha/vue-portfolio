@@ -9,42 +9,56 @@
           <h2>HAUCHA</h2>
         </span>
         <div class="landing-bottomleft_deco"><span></span></div>
-        <img src="https://i.postimg.cc/Y9mJg9ZD/Screenshot-2023-05-09-134800.png" alt="Geenay Photo">
+        <img src="https://i.postimg.cc/Y9mJg9ZD/Screenshot-2023-05-09-134800.png" alt="me">
       </div>
     </div>
   </section>
-  <section class="graybg">
-    <div class="width-wrapper">
+  <section class="graybg" >
+    <div class="width-wrapper p-0">
       <h2 class="slash-deco">QUICK FACTS</h2>
       <ul>
-        <li>I’m a born and bred South African that moved to the UK 3 years ago</li>
-        <li>I have a very weird obsession with amazing smelling candles</li>
-        <li>Every ambition I had as a little girl actually came true, my mom is still in shock</li>
-        <li>I write creative scripts and spoken word for a charity I volunteer for</li>
-        <li>I’m passionate about life and disrupting the norm</li>
+        <li>I’ve been born and bred in South Africa and willing to relocate.</li>
+        <li>I’m 20 years old, Born on the 21st of May 2003 .</li>
+        <li>I’m obsessed with nature and animals  ! .</li>
+        <li>I write creative poems and read books in my free time for entertainment .</li>
+        <li>I’m passionate about life so i try new things and enjoy most of life .</li>
+        <li> I can truly say I’m a people's person and get along with the unknown well ! .</li>
+        <li> I’m passionate about coding because it lets me use my brain to figure out errors .</li>
+        <li> I’m a fast-learner that is eager to learn and upskill in the IT field </li>
       </ul>
     </div>
   </section>
-  <section>
-    <div class="width-wrapper">
+  <section class="p-0">
+    <div class="width-wrapper container" >
       <h3 class="gray2">ABOUT ME</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi et ducimus fugit reiciendis voluptas, vitae obcaecati. Sapiente et alias consequuntur ipsum cum expedita, dicta nesciunt illo ducimus itaque, explicabo harum!</p>
-  
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa voluptatum consequuntur eum harum, repudiandae minima pariatur reiciendis cumque neque temporibus labore. Nostrum natus perferendis hic sed voluptatem aperiam expedita enim?</p>
-  
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur possimus corporis minima reiciendis sint! Saepe, mollitia maxime? Provident distinctio sapiente neque animi, nemo labore debitis ducimus similique inventore, deserunt eaque!
-      </p>
-  
-      <p>Fast forward 3 years to now and I’m proud to call myself a hard-working, creative and driven UX Designer who decided to design an even better version of a cloud storage platform! I wanted to be a designer to inspire change. We live in a day and age
-        where an address on a browser or an app on your phone can influence the world. I realised that being a creator is empowering, but it’s important to keep in mind that with great power comes great responsibility. We need to be mindful as we effect
-        the change we need in this world. That’s the kind of designer I’m always striving to be. I’m proud to say that going against the grain was exactly the risk I needed to take. I now get to combine my knowledge of a competitive fast-paced industry,
-        social media strategy, team building and traditional as well as product design processes to become the best User Experience Designer I can be.</p>
-      <p class="note graybg"><b>*JP NOTE:</b><br> Thanks to Geenay for letting us use her awesome layout for a group session! Here's the link to her full portfolio <a href="http://geenay.design/">geenay.design</a>
-        </p>
-        <a href="https://drive.google.com/uc?export=download&id=1gvhf_vaQ1E2BLA-PJmwQZ2Lgrlr3Jh_e" class="btn btn-primary">
-          Download CV
+
+      <p class="px-0" style="margin-top:2rem;">HI I'm Rabia Ramadhani Haucha ,I come from a small area but I have big dreams.I am currently studying at Lifechoices to pursue my career in coding.I am really hard working,dedicated and a driven individual. I am a quick learner and strive to  always do things right the first time and perfect . I love doing things my way because hard work always pay off . I am very independent and manage to do most of the things i can on my own.I believe having a skill is useful if you can benefit from it . I am <span style="color:#a37477;">GRATEFUL</span> for all the opportunities there are now a days to beable to be on your own two feet and make your life meaningful . My coding experiences have been both exciting and challenging. I enjoy the process of writing out the code and seeing the results of my hard work. It is especially exciting to solve a problem that I was stuck on for some time. Although coding can be difficult at times, I find that it often comes down to understanding the problem and finding the best way to solve it. With practice and patience, I'm able to find the right solution and move forward. Overall, coding is a fun and rewarding experience that I'm glad to be a part of .
+  </p>
+      <p class="note graybg" style="  margin-top: 3rem;"><b>*RH NOTE:</b><br> Here's a pdf to my CV if interested in contacting or connecting with me.
+        <br><br>
+         <a href="https://drive.google.com/uc?export=download&id=1gvhf_vaQ1E2BLA-PJmwQZ2Lgrlr3Jh_e" class="btn btn-primary">
+          Download My CV
         </a>
+        </p>
     </div>
+  
+    <div class="container">
+        <h1 class="display-4 text-center m-3">WHY HIRE ME</h1>
+        <div class="card mb-4">
+            <div class="row">
+                <div class="col-12 col-md-2">
+                    <img style="width:10rem;" src="https://p.kindpng.com/picc/s/171-1718046_javascript-programming-language-logo-hd-png-download.png" alt="">
+                </div>
+                <div class="col-12 col-md-10">
+                    <div class="card-body">
+                        <p class="card-text px-5">
+                          I am passionate about my work and strive to be the best I can be. I have a strong work ethic and have been told that I am a team player. I am an excellent communicator and can easily adapt to different working environments. My knowledge of the industry is extensive, and I have a creative and innovative approach to problem-solving. I am reliable and organized, and I'm always willing to take on new challenges. I am confident that I can bring a unique perspective to your team and contribute to its success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
   </section>
 
 </template>
@@ -60,8 +74,21 @@
 
 <style scoped>
 
+body{
+  background-color:lightblue;
+  
+}
+  .vertical .card:hover{
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px grey, 0 4px 8px grey;
+  }
+  .vertical .btn:hover{
+      background-color: blue;
+      color:white;
+  }
 p {
   line-height: 1.5;
+  font-family: "Lato", sans-serif;
 }
 
 section {
@@ -72,10 +99,12 @@ ul {
   margin: 0;
   padding-left: 20px;
   line-height: 1.5;
+  font-family: "Lato", sans-serif;
 }
 
 li { 
   margin-bottom: 5px;
+  font-family: "Lato", sans-serif;
 }
 
 .landing-hero-wrapper  {
@@ -118,23 +147,6 @@ li {
   letter-spacing: 5px;
 }
 
-.landinghero-content span {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
-  grid-row: 2;
-  margin-bottom: 100px;
-}
-
-.landinghero-content h3 {
-  /* font-size: 28px; */
-  font-size: calc(0.5rem + 2vmin);
-  line-height: 0.5;
-  font-family: 'Alegreya', serif;
-  justify-self: end;
-  width:70%;
-  text-align: right;
-}
 
 
 
@@ -159,8 +171,6 @@ li {
     grid-row: 3;
 }
 
-
-/* stop paragraphs from growing */
 .width-wrapper {
   max-width: 600px;
   margin: auto;
@@ -173,8 +183,9 @@ li {
 .pinkbg  { background-color: #a37474; }
 
 .note {
+
   margin: 30px 0;
   padding: 30px;
-  outline: solid 1px #FF87A3;
+  outline: solid 2px #FF87A3;
 }
 </style>
