@@ -3,87 +3,67 @@
     <section id="contact">
       <h1 class="section-header">Contact</h1>
       <div class="contact-wrapper">
-        <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/xpzgabrl"
-        method="POST">
-          <div class="form-group">
-            <div class="col-sm-12">
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="NAME"
-                name="name"
-                value=""
-                required
-              />
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/xpzgabrl"
+                method="POST">
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                </div>
+                <button class="btn btn- send-button" id="submit" type="submit" value="SEND">
+                  <div class="alt-send-button">
+                    <span class="send-text">SEND</span>
+                  </div>
+                </button>
+              </form>
+            </div>
+            <div class="col-12 col-md-6">
+              <!-- <div class="direct-contact-container">
+                <li class="list-item">
+                  <span class="contact-text phone" style="margin-right: 5rem"><a href="tel:067 201 8653" title="FULLNAME">RABIA
+                       HAUCHA</a></span>
+                </li>
+                <ul class="contact-list">
+                  <li class="list-item">
+                    <i class="bi bi-geo-alt-fill" style="color: black"></i><span class="contact-text place">Cape Town,Western
+                        Cape</span>
+                    <i class="fa fa-map-marker fa-2x"></i>
+                  </li>
+                  <li class="list-item">
+                    <i class="bi bi-telephone" style="color: black"><span class="contact-text phone"><a href="tel:067 201 8653"
+                          title="Give me a call">(067) 201 8653</a></span></i>
+                  </li>
+      
+                  <li class="list-item email">
+                    <i class="bi bi-envelope-heart" style="color: black"><span class="contact-text gmail"><a href="mailto:#"
+                          title="Send me an email">Rabiahaucha9@gmail.com</a></span></i>
+                  </li>
+                </ul>
+              </div> -->
+              <div>
+                <ul>
+                  <li>RABIA HAUCHA</li>
+                  <li><i class="bi bi-geo-alt-fill" style="color: black"></i>Cape Town,Western Cape</li>
+                  <li><i class="bi bi-geo-alt-fill" style="color: black"></i>Cape Town,Western Cape</li>
+                  <li><i class="bi bi-geo-alt-fill" style="color: black"></i>Cape Town,Western Cape</li>
+                </ul>
+              </div>
+
             </div>
           </div>
-          <div class="form-group">
-            <div class="col-sm-12">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="EMAIL"
-                name="email"
-                value=""
-                required
-              />
-            </div>
-          </div>
-          <div class="form-group">
-          <textarea
-            class="form-control"
-            rows="10"
-            placeholder="MESSAGE"
-            name="message"
-            required
-          ></textarea>
         </div>
-          <button
-            class="btn btn- send-button"
-            id="submit"
-            type="submit"
-            value="SEND"
-          >
-            <div class="alt-send-button">
-              <span class="send-text">SEND</span>
-            </div>
-          </button>
-        </form>
 
-         <div class="direct-contact-container">
-          <ul class="contact-list">
-            <li class="list-item">
-              <i class="bi bi-geo-alt-fill" style="color: black"><span class="contact-text place"
-                >Cape Town,Western Cape</span
-                ></i>
-
-              <i class="fa fa-map-marker fa-2x"
-              ></i
-              >
-            </li>
-            <li class="list-item">
-              <i class="bi bi-telephone" style="color: black"
-                ><span class="contact-text phone"
-                  ><a href="tel:067 201 8653" title="Give me a call"
-                    >(067) 201 8653</a
-                  ></span
-                ></i
-              >
-            </li>
-
-            <li class="list-item email">
-              <i class="bi bi-envelope-heart" style="color: black"
-                ><span class="contact-text gmail"
-                  ><a href="mailto:#" title="Send me an email"
-                    >Rabiahaucha9@gmail.com</a
-                  ></span
-                ></i
-              >
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
   </div>
@@ -98,17 +78,13 @@ export default {};
   color: white;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
   padding-bottom: 100px;
 }
-.container {
-  padding: 7rem;
-}
+
 
 #contact {
   width: 100%;
@@ -125,15 +101,7 @@ body {
   letter-spacing: 6px;
 }
 
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  width: 100%;
-}
+
 
 /* Left contact page */
 .form-horizontal {
@@ -145,8 +113,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-
 
 .form-control,
 textarea {
@@ -176,15 +142,9 @@ textarea {
   color: black;
 }
 
-.direct-contact-container {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-span{
+
+span {
   margin: 1rem;
 }
 
@@ -214,6 +174,7 @@ span{
   color: #a37474;
   text-decoration: none;
 }
+
 #submit {
   background-color: #a37474;
 }
