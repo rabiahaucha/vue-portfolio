@@ -1,62 +1,38 @@
 <template>
   <div class="container">
-    <section id="contact">
+    <section id="contact" style="margin-top: 4rem">
       <h1 class="section-header">Contact</h1>
       <div class="contact-wrapper">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
-              <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/xpzgabrl"
-                method="POST">
-                <div class="form-group">
-                  <div class="col-sm-12">
-                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required />
-                  </div>
+            
+              <form action="https://formspree.io/f/xpzgabrl" method="POST">
+                <div class="mb-3">
+            
+                  <input type="email" class="form-control w-100" id="email" placeholder="NAME" name="email" value="" required>
                 </div>
-                <div class="form-group">
-                  <div class="col-sm-12">
-                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required />
-                  </div>
+                <div class="mb-3">
+              
+                  <input type="email" class="form-control w-100" id="email" placeholder="EMAIL" name="email" value="" required>
                 </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                <div class="mb-3">
+            
+                  <textarea class="form-control w-100"  rows="9" id="message" placeholder="REASON OF INTEREST" name="message" value="" required></textarea>
                 </div>
-                <button class="btn btn- send-button" id="submit" type="submit" value="SEND">
-                  <div class="alt-send-button">
-                    <span class="send-text">SEND</span>
-                  </div>
-                </button>
+                <div>
+                  <button class="btn custom-btn" id="submit" type="submit">SEND</button>
+                </div>
               </form>
             </div>
             <div class="col-12 col-md-6">
-              <!-- <div class="direct-contact-container">
-                <li class="list-item">
-                  <span class="contact-text phone" style="margin-right: 5rem"><a href="tel:067 201 8653" title="FULLNAME">RABIA
-                       HAUCHA</a></span>
-                </li>
-                <ul class="contact-list">
-                  <li class="list-item">
-                    <i class="bi bi-geo-alt-fill" style="color: black"></i><span class="contact-text place">Cape Town,Western
-                        Cape</span>
-                    <i class="fa fa-map-marker fa-2x"></i>
-                  </li>
-                  <li class="list-item">
-                    <i class="bi bi-telephone" style="color: black"><span class="contact-text phone"><a href="tel:067 201 8653"
-                          title="Give me a call">(067) 201 8653</a></span></i>
-                  </li>
-      
-                  <li class="list-item email">
-                    <i class="bi bi-envelope-heart" style="color: black"><span class="contact-text gmail"><a href="mailto:#"
-                          title="Send me an email">Rabiahaucha9@gmail.com</a></span></i>
-                  </li>
-                </ul>
-              </div> -->
-              <div>
-                <ul>
-                  <li>RABIA HAUCHA</li>
-                  <li><i class="bi bi-geo-alt-fill" style="color: black"></i>Cape Town,Western Cape</li>
-                  <li><i class="bi bi-geo-alt-fill" style="color: black"></i>Cape Town,Western Cape</li>
-                  <li><i class="bi bi-geo-alt-fill" style="color: black"></i>Cape Town,Western Cape</li>
+            
+              <div class="w-100">
+                <ul style="list-style: none; height: 50vh;" class="d-flex flex-column align-items-center mt-3 list p-0">
+                  <li class="display-6">RABIA HAUCHA</li>
+                  <li class="hover"><i class="bi bi-geo-alt-fill px-2" style="color: black"></i>Cape Town,Western Cape</li>
+                  <li class="hover"><i class="bi bi-telephone px-2" style="color: black"></i>(067) 201 8653</li>
+                  <li class="hover"><i class="bi bi-envelope-heart px-2" style="color: black"></i>Rabiahaucha9@gmail.com</li>
                 </ul>
               </div>
 
@@ -78,11 +54,21 @@ export default {};
   color: white;
 }
 
+.list{
+  line-height: 4;
+}
+
+.hover:hover{
+  color: red;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
   padding-bottom: 100px;
+
 }
 
 
@@ -103,17 +89,6 @@ body {
 
 
 
-/* Left contact page */
-.form-horizontal {
-  width: 50%;
-  font-family: "Lato";
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .form-control,
 textarea {
   width: 25rem;
@@ -122,31 +97,12 @@ textarea {
   letter-spacing: 1px;
 }
 
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
+.custom-btn{
+  background-color: #a37474;
+  color: #000;
+  margin-bottom: 2rem;
 }
 
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-}
-
-.send-text {
-  display: block;
-  margin-top: 5px;
-  font: 700 12px "Lato", sans-serif;
-  letter-spacing: 2px;
-  color: black;
-}
-
-
-
-span {
-  margin: 1rem;
-}
 
 .contact-list {
   list-style-type: none;
@@ -154,23 +110,8 @@ span {
   padding-right: 20px;
 }
 
-.list-item {
-  line-height: 4;
-  color: white;
-}
 
-.contact-text {
-  font: 300 18px "Lato", sans-serif;
-  letter-spacing: 1.9px;
-  color: #a37474;
-}
-
-.contact-text a {
-  color: black;
-  text-decoration: none;
-}
-
-.contact-text a:hover {
+.contact-text li:hover {
   color: #a37474;
   text-decoration: none;
 }
