@@ -28,6 +28,7 @@
                 </button>
               </form>
             </div>
+
             <div class="col-12 col-md-6">
               <!-- <div class="direct-contact-container">
                 <li class="list-item">
@@ -50,6 +51,7 @@
                           title="Send me an email">Rabiahaucha9@gmail.com</a></span></i>
                   </li>
                 </ul>
+                
               </div> -->
               <div>
                 <ul>
