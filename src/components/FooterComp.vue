@@ -1,18 +1,12 @@
 <template>
-    <div>
-        <div class="container">
-            <footer class="py-3 my-4">
-              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-              </ul>
-              <p class="text-center text-body-secondary">&copy; 2023 Company, Inc</p>
+        <div class="foote">
+            <footer class="foot">
+              <router-link id="links" to="/">Home</router-link>
+              <router-link id="links" to="/about">About</router-link>
+              <router-link id="links" to="/contact">Contact</router-link>
+              <h6 class="copyr text-center">&copy; Rabia Ramadhani Haucha 2023</h6>
             </footer>
           </div>
-    </div>
 </template>
 
 <script>
@@ -22,5 +16,28 @@
 </script>
 
 <style scoped>
+.foote {
+  border-top: 1px solid black;
+  background-color: black;
+  margin-top: 2rem;
+}
+
+.copyr {
+  color: white;
+}
+
+#links:hover {
+  color: pink;
+}
+
+#links {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+
+
 
 </style>

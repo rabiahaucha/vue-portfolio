@@ -1,31 +1,32 @@
 <template>
-    
-    
-    <h1 style="padding-top:3rem;">Testimonials</h1>
-    <div class="notepaper">
-        <figure class="quote">
-      <blockquote class="curly-quotes" >
-      "No act of kindness, no matter how small, ever goes to waste."
-    </blockquote>
-      <figcaption class="quote-by"> -Siyamanga Zweni</figcaption>
-    </figure>
-  </div>
- <div class="container">
- <div class="testimonial">
-       <div class="card" v-for="data in Testimonials" :key="data.id">
-         <div class="layer" ></div>
-         <div class="content">
-           <p>{{data.description}}</p>
-           <div class="image"><img :src="data.image" style="width:8rem;"       alt="avatar"> 
-           </div>
-           <div class="details">
-        <p>{{data.name}}</p>
-             <span>Web Designer</span>
-           </div>
-      </div>
-       </div>
- </div>
-         </div>   
+    <div class="d-flex justify-content-center align-items-center h-100 flex-column">
+
+      <h1 style="padding-top:6rem;">Testimonials</h1>
+      <div class="notepaper">
+          <figure class="quote">
+        <blockquote class="curly-quotes" >
+        "No act of kindness, no matter how small, ever goes to waste."
+      </blockquote>
+        <figcaption class="quote-by"> -Siyamanga Zweni</figcaption>
+      </figure>
+    </div>
+   <div class="container">
+   <div class="testimonial">
+         <div class="card" v-for="data in Testimonials" :key="data.id">
+           <div class="layer" ></div>
+           <div class="content">
+             <p>{{data.description}}</p>
+             <div class="image"><img :src="data.image" style="width:8rem;"       alt="avatar"> 
+             </div>
+             <div class="details pt-1" >
+          <p>{{data.name}}</p>
+               <span>{{data.title}}</span>
+             </div>
+        </div>
+         </div>
+   </div>
+           </div>   
+    </div>
 
 </template>
 

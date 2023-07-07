@@ -2,8 +2,9 @@
     <div>
     <div class="my-5 container" >
         <div class="row" style="margin-top: 6rem">
-            <h1>MY <span style="color:#a37474;">SKILLS</span></h1>
-            <div class="col-12 col-md-4" v-for="data in Skills" :key="data.id">
+    <h1 >MY <span style="color:#9f6060;">SKILLS</span></h1>
+
+            <div class="col-12 col-md-4 p-2" v-for="data in Skills" :key="data.id">
               <img :src="data.image" alt="" style="width:9rem;height:9rem;">
               <p style="margin-top:2rem;">{{data.level}}</p>
               <p>{{ data.description }}</p>

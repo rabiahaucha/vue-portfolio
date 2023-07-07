@@ -2,7 +2,7 @@
     <div class="navbar1">
         <nav class="navbar navbar-dark bg-black fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Rabia Haucha</a>
+              <a class="navbar-brand" href="/">Rabia Ramadhani Haucha</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation ">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -50,6 +50,12 @@
 </script>
 
 <style scoped>
+.navbar-brand:hover {
+  color: pink;
+}
+.navbar-brand {
+  color: white;
+}
   .nav{
     z-index: -1;
   }

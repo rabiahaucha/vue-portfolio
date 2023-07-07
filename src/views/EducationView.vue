@@ -1,6 +1,8 @@
 <template>
-    
-    <div class="container" style="padding-top:3rem;">
+   
+    <div class="d-flex justify-content-center align-items-center h-100 flex-column">
+        <h1 style="padding-top:7rem;">MY <span style="color:#9f6060;">EDUCATION</span></h1>
+    <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-8 offset-lg-2" v-for="data in Education" :key="data.id">
             <article class="education-item">
@@ -22,6 +24,7 @@
             </article>
           </div>
         </div>
+    </div>
     </div>
 </template>
 
