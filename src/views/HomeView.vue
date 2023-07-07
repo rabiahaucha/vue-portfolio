@@ -15,9 +15,7 @@
         </div>
         <div class="col-12 col-md-6">
           <img src="https://i.postimg.cc/c6GSmLPP/something.png" class="w-75" alt="" loading="lazy">
-          <!-- <div class="image">
-          </div> -->
-  
+         
         </div>
       </div>
     </div>
