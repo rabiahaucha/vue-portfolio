@@ -30,24 +30,24 @@
   </section>
   <section class="p-0">
     <div class="width-wrapper container" >
-      <h3 class="gray2">ABOUT ME</h3>
+      <h1>ABOUT<span style="color:#9f6060; padding-left:1rem;">ME</span></h1>
 
       <p class="px-0" style="margin-top:2rem;">HI I'm Rabia Ramadhani Haucha ,I come from a small area but I have big dreams.I am currently studying at Lifechoices to pursue my career in coding.I am really hard working,dedicated and a driven individual. I am a quick learner and strive to  always do things right the first time and perfect . I love doing things my way because hard work always pay off . I am very independent and manage to do most of the things i can on my own.I believe having a skill is useful if you can benefit from it . I am <span style="color:#a37477;">GRATEFUL</span> for all the opportunities there are now a days to beable to be on your own two feet and make your life meaningful . My coding experiences have been both exciting and challenging. I enjoy the process of writing out the code and seeing the results of my hard work. It is especially exciting to solve a problem that I was stuck on for some time. Although coding can be difficult at times, I find that it often comes down to understanding the problem and finding the best way to solve it. With practice and patience, I'm able to find the right solution and move forward. Overall, coding is a fun and rewarding experience that I'm glad to be a part of .
   </p>
       <p class="note graybg" style="  margin-top: 3rem;"><b>*RH NOTE:</b><br> Here's a pdf to my CV if interested in contacting or connecting with me.
         <br><br>
-         <a href="https://drive.google.com/uc?export=download&id=1gvhf_vaQ1E2BLA-PJmwQZ2Lgrlr3Jh_e" class="btn btn-primary">
+         <a href="https://drive.google.com/uc?export=download&id=1gvhf_vaQ1E2BLA-PJmwQZ2Lgrlr3Jh_e" class="btn btn-dark">
           Download My CV
         </a>
         </p>
     </div>
   
-    <div class="container">
+    <div class="container ">
         <h1 class="display-4 text-center m-3">WHY HIRE ME</h1>
-        <div class="card mb-4">
+        <div class="card mb-4" style="border: 2px solid black;">
             <div class="row">
                 <div class="col-12 col-md-2">
-                    <img style="width:10rem;" src="https://p.kindpng.com/picc/s/171-1718046_javascript-programming-language-logo-hd-png-download.png" alt="">
+                    <img style="width:9rem; padding-top:0.5rem; padding-bottom:0.5rem;" src="https://i.postimg.cc/prStDqVj/you-re-hired.png" alt="">
                 </div>
                 <div class="col-12 col-md-10">
                     <div class="card-body">
@@ -74,18 +74,6 @@
 
 <style scoped>
 
-body{
-  background-color:lightblue;
-  
-}
-  .vertical .card:hover{
-      transform: scale(1.1);
-      box-shadow: 0 10px 20px grey, 0 4px 8px grey;
-  }
-  .vertical .btn:hover{
-      background-color: blue;
-      color:white;
-  }
 p {
   line-height: 1.5;
   font-family: "Lato", sans-serif;
@@ -188,4 +176,5 @@ li {
   padding: 30px;
   outline: solid 2px #FF87A3;
 }
+
 </style>

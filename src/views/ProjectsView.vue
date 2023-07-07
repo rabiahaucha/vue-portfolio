@@ -1,45 +1,49 @@
 <template>
-  <span class="row" style="margin-top: 6rem">
-    <h1>MY<span style="color:#a37474;"> PROJECTS</span></h1>
-
-</span>
-  <div class="container scroll-1 pt-5 m-auto" >
-    <div class="card" v-for="data in Projects" :key="data.id">
-            <div class="card__image" >
-            <img :src="data.image" alt="" style="width:38rem;" loading="lazy">
-          </div>
-          <div class="card__content">
-            <span class="card-title" >{{data.title}}</span>
-              <p class="card__describe">
-                {{data.text}}
-              </p>
-              <div class="d-flex1 ">
-
-                <a :href="data.github" class="btn w-25" target="_blank" id="button">Github</a>
-                <a :href="data.netlify" class="btn w-25" target="_blank" id="button">Netlify</a>
-              </div>
-          </div>
-</div>
-
-<!-- Mobile Cards -->
-</div>
-<div class="container1">
-  <div class="row gap-3">
-    <div class="col-12" v-for="data in Projects" :key="data.id">
-      <div class="card mobile-cards m-auto" style="width: 18rem;">
-        <img class="card-img-top" :src="data.image" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{ data.title }}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div class="d-flex">
-            <a :href="data.github" class="btn w-25" target="_blank" id="button"><i class="bi bi-github"></i></a>
-            <a :href="data.netlify" class="btn w-25" target="_blank" id="button"><i class="bi bi-box-arrow-up-right"></i></a>
+  <div class="d-flex justify-content-center align-items-center h-100 flex-column">
+    <span class="row" style="margin-top: 6rem">
+      <h1>MY<span style="color:#a37474;"> PROJECTS</span></h1>
+  
+  </span>
+    <div class="container scroll-1 pt-5 m-auto" >
+      <div class="card" v-for="data in Projects" :key="data.id">
+              <div class="card__image" >
+              <img :src="data.image" alt="" style="width:30rem;" loading="lazy">
+            </div>
+            <div class="card__content">
+              <span class="card-title" >{{data.title}}</span>
+                <p class="card__describe">
+                  {{data.text}}
+                </p>
+                <div class="d-flex1">
+  
+                  <a :href="data.github" class="btn w-25 mx-3" target="_blank" id="button">Github</a>
+                  <a :href="data.netlify" class="btn w-25 mx-3" target="_blank" id="button">Netlify</a>
+                </div>
+            </div>
+  </div>
+  
+  <!-- Mobile Cards -->
+  </div>
+  <div class="container1">
+    <div class="row gap-3">
+      <div class="col-12" v-for="data in Projects" :key="data.id">
+        <div class="card mobile-cards m-auto" style="width: 18rem;">
+          <img class="card-img-top" :src="data.image" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{ data.title }}</h5>
+            
+            <p class="card-text">{{data.text}}</p>
+            <div class="d-flex gap-3 ">
+              <a :href="data.github" class="btn w-25 mx-5" target="_blank" id="button"><i class="bi bi-github"></i></a>
+              <a :href="data.netlify" class="btn w-25 mx-5" target="_blank" id="button"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  </div>
+  
 </template>
 
 <script>
@@ -72,9 +76,7 @@
     font: 700 12px "Lato", sans-serif;
    
   }
-  .scrollable-element {
-    scrollbar-color: red yellow;
-  }
+  
   h3{
     font: 700 12px "Lato", sans-serif;
   }
@@ -94,7 +96,7 @@
   
   .scroll-1::-webkit-scrollbar-thumb {
     border-radius: 20px;
-    background: #888;
+    background: black;
   }
   
   .container * {
@@ -102,6 +104,7 @@
     padding: 0;
     margin: 0;
     color:white;
+  
     
   }
   
@@ -118,6 +121,7 @@
    width: 40rem;
    margin-left: 32rem;
    font: 700 10px "Lato", sans-serif;
+  
   }
   
   .container .card {
@@ -126,7 +130,8 @@
     border-radius: 8px;
     background-color:black;
     scroll-snap-align: start;
-    border: 3px solid black;
+    border: 5px solid #a37474;
+
   }
   
   .card .card__image {

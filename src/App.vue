@@ -18,6 +18,9 @@ export default {
 </script>
 <style>
 #app {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto minmax(100vh, 1fr) auto;
   font-family: "Merriweather", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

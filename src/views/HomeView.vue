@@ -1,40 +1,31 @@
 <template>
-  <div class="home">
-    <p>Welcome to my digital portfolio</p>
-  </div>
-  <div class="container " style="padding-top:4rem;">
-    <div class="row">
-      <div class="col-12 col-md-6">
-
-        <h5>
-           <span> <h2>Hi There, I'm</h2></span><br>
-           <span class="name"><h1>Rabia Haucha</h1></span><br>
-           <span> A passionate aspiring full-stack developer. I am so excited to learn more about web development and to start creating my own projects. I am determined to become a successful web developer, and I am willing to put in the hard work and dedication it will take to reach my goals. I am constantly pushing myself to learn new things and to improve my skills, and I am confident that I will reach my career objectives.</span>
-       </h5>
-      </div>
-      <div class="col-12 col-md-6">
-        <img src="https://i.postimg.cc/c6GSmLPP/something.png" class="w-75" alt="" loading="lazy">
-        <!-- <div class="image">
-        </div> -->
-
-      </div>
+  <div class="d-flex justify-content-center align-items-center h-100 flex-column">
+    <div class="home">
+      <p>Welcome to my digital portfolio</p>
     </div>
-    <!-- <div class="row">
-      <div class="col-12 col-md-4">
-        
-        <div class="anything">
+    <div class="container" style="padding-top:4rem;">
+      <div class="row">
+        <div class="col-12 col-md-6">
+  
+          <h5>
+             <span> <h2>Hi There, I'm</h2></span><br>
+             <span class="name"><h1>Rabia Haucha</h1></span><br>
+             <span> A passionate aspiring full-stack developer. I am so excited to learn more about web development and to start creating my own projects. I am determined to become a successful web developer, and I am willing to put in the hard work and dedication it will take to reach my goals. I am constantly pushing myself to learn new things and to improve my skills, and I am confident that I will reach my career objectives.</span>
+         </h5>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="https://i.postimg.cc/c6GSmLPP/something.png" class="w-75" alt="" loading="lazy">
+          <!-- <div class="image">
+          </div> -->
+  
         </div>
       </div>
-      <div class="col-12 col-md-4">
-
-      </div>
-    </div> -->
-    <div class="rabia">
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+</script>
 <style scoped>
 .name{
   color: #a37477;
@@ -44,6 +35,7 @@
   display: flex;
   height: 20rem;
   justify-content: space-between;
+  font: 700 12px "Lato", sans-serif;
 }
 
 .image{
@@ -78,6 +70,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #000;
+  font: 700 12px "Lato", sans-serif;
 }
 
 p {
