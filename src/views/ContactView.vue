@@ -10,11 +10,25 @@
               <form action="https://formspree.io/f/xpzgabrl" method="POST">
                 <div class="mb-3">
             
-                  <input type="text" class="form-control w-100" id="email" placeholder="NAME" name="name" value="" required>
+                  <input type="text" class="form-control w-100" id="email" style="p-4 w-75 text-center border-5 rounded-4 fs-5"
+                  placeholder="NAME"
+                  name="name"
+                  minlength="3"
+                  maxlength="20"
+                  required
+                  oninvalid="this.setCustomValidity('Please enter your name')"
+                  oninput="this.setCustomValidity('')">
                 </div>
                 <div class="mb-3">
               
-                  <input type="email" class="form-control w-100" id="email" placeholder="EMAIL" name="email" value="" required>
+                  <input type="email" class="form-control w-100" id="email" style="p-4 w-75 text-center border-5 rounded-4 fs-5"
+                  placeholder="EMAIL"
+                  name="name"
+                  minlength="3"
+                  maxlength="20"
+                  required
+                  oninvalid="this.setCustomValidity('Please enter your e-mail')"
+                  oninput="this.setCustomValidity('')">
                 </div>
                 <div class="mb-3">
             
@@ -25,6 +39,7 @@
                 </div>
               </form>
             </div>
+            
             <div class="col-sm-12 col-md-6">
             
               <div class="w-100">
@@ -127,4 +142,5 @@ textarea {
 #submit {
   background-color: #a37474;
 }
+
 </style>
